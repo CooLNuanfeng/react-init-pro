@@ -5,7 +5,9 @@ import './App.css';
 
 function App() {
   return (
-    <BasicRoute/>
+    <div className="app">
+      <BasicRoute/>
+    </div>
   );
 }
 
