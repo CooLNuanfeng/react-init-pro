@@ -19,6 +19,7 @@ class Login extends React.Component {
     console.log('componentDidMount')
   }
   login(){
+    console.log('login in')
     this.props.doLogin().then((res)=>{
       this.props.history.push('/mine')
     })

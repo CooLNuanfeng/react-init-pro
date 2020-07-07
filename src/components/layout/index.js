@@ -28,7 +28,6 @@ const Layout = (WrappedComponent, pageInfo) => {
       }
     }
     componentDidMount(){
-      // console.log(store.getState(),'sss', this.props.history)
       if(pageInfo.needLogin && !store.getState().user.token){
         this.props.history.push('/login')
       }

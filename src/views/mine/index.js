@@ -12,6 +12,6 @@ export default class Mine extends React.Component {
     )
   }
   componentDidMount(){
-    console.log('componentDidMount')
+    console.log('componentDidMount mine')
   }
 }
