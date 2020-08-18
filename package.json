@@ -165,5 +165,7 @@
     "customize-cra": "^1.0.0",
     "node-sass": "^4.14.1",
     "react-app-rewired": "^2.1.6"
-  }
+  },
+
+  "proxy": "https://m.ehaier.com"
 }

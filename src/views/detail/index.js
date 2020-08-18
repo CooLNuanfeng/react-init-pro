@@ -1,5 +1,5 @@
 import React from 'react'
-
+import http from '../../http/'
 import { Button } from 'antd-mobile';
 
 export default class Detail extends React.Component {
@@ -14,5 +14,8 @@ export default class Detail extends React.Component {
   }
   componentDidMount(){
     console.log('componentDidMount')
+    http.get('/sg/cms/middleImageConfig.json').then(res=>{
+      console.log(res)
+    })
   }
 }

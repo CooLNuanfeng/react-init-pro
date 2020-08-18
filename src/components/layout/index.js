@@ -20,7 +20,7 @@ const Layout = (WrappedComponent, pageInfo) => {
           <div className="page-warp">
             {pageInfo.showHeader ? <Header/> : null}
             <div className="page-body" style={{top: pageInfo.showHeader ? '.9rem' : 0, bottom: pageInfo.showTabbar ? '.9rem' : 0}}>
-              <WrappedComponent {...this.props}/>
+              <WrappedComponent {...this.props} {...pageInfo.meta}/>
             </div>
             {pageInfo.showTabbar ? <Tabbar />: null}
           </div>

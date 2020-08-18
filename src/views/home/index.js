@@ -54,7 +54,7 @@ class Home extends React.PureComponent {
   }
   goPage(){
     console.log(this.props)
-    this.props.history.push('/detail')
+    this.props.history.push('/detail/12')
   }
 }
 

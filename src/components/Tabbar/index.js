@@ -8,7 +8,7 @@ export default class Tabbar extends React.Component {
     return (
       <div className="tabbar">
         <div><Link to="/">Home</Link></div>
-        <div><Link to="/detail">Shop</Link></div>
+        <div><Link to="/cart">Shop</Link></div>
         <div><Link to="/mine">Mine</Link></div>
       </div>
     )

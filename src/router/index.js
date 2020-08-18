@@ -24,6 +24,16 @@ const Mine = Layout(React.lazy(()=> import('../views/mine')), {
   needLogin: true
 })
 
+const Cart = Layout(React.lazy(()=> import('../views/cart')), {
+  title: '购物车',
+  showHeader: true,
+  showTabbar: true,
+  needLogin: true,
+  meta: {
+    other: 'aa'
+  }
+})
+
 
 const Login = Layout(React.lazy(()=> import('../views/login')), {
   title: '登录',
@@ -36,7 +46,8 @@ const BasicRoute = () => (
         <Switch>
           <Suspense fallback={<Loading/>}>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/detail" component={Detail}/>
+            <Route exact path="/detail/:id" component={Detail}/>
+            <Route exact path="/cart" component={Cart}/>
             <Route exact path="/mine" component={Mine}/>
             <Route exact path="/login" component={Login}/>
           </Suspense>
