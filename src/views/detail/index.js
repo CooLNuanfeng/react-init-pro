@@ -1,5 +1,5 @@
 import React from 'react'
-import http from '../../http/'
+import http from '@/http/'
 import { Button } from 'antd-mobile';
 
 export default class Detail extends React.Component {
