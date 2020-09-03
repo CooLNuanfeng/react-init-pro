@@ -12,10 +12,9 @@ const Home = Layout(React.lazy(()=> import('../views/home')), {
 
 const Detail = Layout(React.lazy(()=> import('../views/detail')), {
   title: '详情',
-  showHeader: false,
+  showHeader: true,
   showTabbar: false
 })
-
 
 const Mine = Layout(React.lazy(()=> import('../views/mine')), {
   title: '我的',
