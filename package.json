@@ -167,5 +167,5 @@
     "react-app-rewired": "^2.1.6"
   },
 
-  "proxy": "https://m.ehaier.com"
+  "proxy": "https://jsonplaceholder.typicode.com"
 }
